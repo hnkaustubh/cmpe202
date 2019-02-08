@@ -1,10 +1,10 @@
 package org.launchcode;
 
-public class GumballMachineMain {
+public class GumballMachine {
     protected boolean has_quarter1;
     protected boolean has_quarter2;
 
-    public GumballMachineMain()
+    public GumballMachine()
     {
         // initialise instance variables
         this.has_quarter1 = false;

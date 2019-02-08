@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class GumballMachine2 extends GumballMachineMain{
+public class GumballMachine2 extends GumballMachine {
     private int num_gumballs;
 
     public GumballMachine2( int size ) {
@@ -33,7 +33,7 @@ public class GumballMachine2 extends GumballMachineMain{
         }
         else
         {
-            System.out.println( "Sorry, you didn't insert 2 quarters, please insert 2 quarter" ) ;
+            System.out.println( "Sorry, you didn't insert 2 quarters, please insert 2 quarters" ) ;
         }
     }
 }

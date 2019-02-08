@@ -1,12 +1,13 @@
 package org.launchcode;
 
-public class GumballMachine3 extends GumballMachineMain{
+public class GumballMachine3 extends GumballMachine {
     private int num_gumballs;
     private boolean has_nickel;
     private int size_nickel = 0;
     private boolean has_dime;
     private int size_dime = 0;
     private int size_quarter = 0;
+    private int size_inserted = 0;
 
     public GumballMachine3( int size ) {
         this.num_gumballs = size;
@@ -42,7 +43,9 @@ public class GumballMachine3 extends GumballMachineMain{
                 for (int k=0; k<size_quarter; k++)
                     num_gumballs--;
 
-                System.out.println("Thanks for your coins. All inserted gumballs ejected");
+                this.size_inserted = size_dime + size_nickel + size_quarter;
+
+                System.out.println("Thanks for your coins. " + size_inserted + " gumballs ejected");
             }
             else
                 System.out.println("No more Gumballs! Sorry, can't return your coins");

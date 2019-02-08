@@ -14,7 +14,7 @@ public class Main {
         gumball.turnCrank();
 
         GumballMachine2 gumball2 = new GumballMachine2(5);
-        gumball2.insertTwoQuarters(25,20);
+        gumball2.insertTwoQuarters(25,25);
         gumball2.turnCrank();
     }
 }

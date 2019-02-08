@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class GumballMachine1 extends GumballMachineMain {
+public class GumballMachine1 extends GumballMachine {
     private int num_gumballs;
 
     public GumballMachine1( int size )
