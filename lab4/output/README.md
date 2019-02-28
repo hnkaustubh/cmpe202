@@ -7,9 +7,9 @@
 			(iii): Either check in or leave
 
 		Corresponding Collaborators:
-			(i): Restaurant Management
-			(ii): Restaurant Management
-			(iii): Restaurant Management
+			(i): Restaurant Management, cell phone
+			(ii): Restaurant Management, cell phone
+			(iii): Restaurant Management, cell phone
 
 	b. Restaurant Management
 		Responsibilities:
@@ -20,9 +20,9 @@
 		
 		Corresponding Collaborators:
 			(i): Customer
-			(ii): Customer
+			(ii): Customer, cell phone
 			(iii): Customer
-			(iv): Customer
+			(iv): Customer, cell phone
 
 	c. Table 
 		Responsbility:
