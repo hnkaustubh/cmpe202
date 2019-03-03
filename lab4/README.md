@@ -73,8 +73,11 @@
     Objects in relation to Chain of Responsibility Design Pattern: 
     
     a. Customer: Client(initiates request to Concrete Handler, the customer can be anywhere in the queue from the front to the tail)
+
     b. Table Handler: Interface Handler(defines an interface for handling requests)
+
     c. AllocateCurrent: Concrete Handler 1
+    
     d. LocateAndAssign: Concrete Handler 2
     
     
