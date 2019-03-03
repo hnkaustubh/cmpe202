@@ -8,9 +8,9 @@
 			(iii): Either check in or leave
 
 		Collaborators:
-			(i): Restaurant Management
-			(ii): Restaurant Management
-			(iii): Restaurant Management
+			(i): Manager
+			(ii): Manager
+			(iii): Manager
 
 	b. Din Tai Fung
 
@@ -58,7 +58,7 @@
 			(ii): Allocate table to client
 		Collbaorators:
 			(i): Manager, Client
-			(ii): Client, table
+			(ii): Client, Table
 
 2. I chose to use the Chain of Responsibility Design pattern to design the collaborating objects for this problem. The reason for doing so is that - 
 
