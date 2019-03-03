@@ -1,47 +1,64 @@
 1. CRC Cards - 
 
 	a. Customer
+
 		Responsibilities: 
 			(i): Register name, cell phone number and number of people via cell phone
 			(ii): Check for text messages
 			(iii): Either check in or leave
 
-		Corresponding Collaborators:
-			(i): Restaurant Management, cell phone
-			(ii): Restaurant Management, cell phone
-			(iii): Restaurant Management, cell phone
+		Collaborators:
+			(i): Restaurant Management
+			(ii): Restaurant Management
+			(iii): Restaurant Management
 
-	b. Restaurant Management
+	b. Din Tai Fung
+
+		Responsbilities: 
+			(i): Maintain customers' queue with details(name, phone number etc.)
+			(ii): Inform Manager 
+
+		Collaborators:
+			(i): Customer
+			(ii): Manager
+
+	c. Manager
+
 		Responsibilities:
-			(i): Check if the customer at the front of the queue has a size less than or equal to table size available
-			(ii): Send message to the next customer that fits
-			(iii): Assign table if customer confirms
-			(iv): Send message to next customer in queue if customer leaves
+			(i): Add customers to the waiting list
+			(ii): Remove certain clients from waiting list
+			(iii): Provide size of next table available
+			(iv): Check if next available table is less than or equal to next customer's size 
 		
 		Corresponding Collaborators:
-			(i): Customer
-			(ii): Customer, cell phone
-			(iii): Customer
-			(iv): Customer, cell phone
+			(i): Customer, LocateAndAssign
+			(ii): Customer
+			(iii): Table
+			(iv): Table, Customer
 
 	c. Table 
+
 		Responsbility:
 			Represent the thing that the restaurant assigns to customers
 
-	d. Din Tai Fung 
+	e. AllocateCurrent 
+
 		Responsibilities:
-			(i): Communicate with customers
-			(ii): Assign table if there’s a proper fit
+			(i): Allocate table to customer at the front of waitlist
+			(ii): Call next handler in the waitlist
 
 		Corresponding Collaborators:
-			(i): Customer
-			(ii): Restaurant Management		
+			(i): Customer, Manager
+			(ii): Manager
 
-	e. Cell Phone
+	f. LocateAndAssign
+
 		Responsbility:
-			Facilitate Customer Resgistration
+			(i): Locate table for client
+			(ii): Allocate table to client
 		Collbaorators:
-			Customer, Restaurant Management
+			(i): Manager, Client
+			(ii): Client, table
 
 2. I chose to use the Chain of Responsibility Design pattern to design the collaborating objects for this problem. The reason for doing so is that - 
 
@@ -55,10 +72,10 @@
     
     Objects in relation to Chain of Responsibility Design Pattern: 
     
-    a. Customer1: Client(initiates request to Concrete Handler)
-    b. Din Tai Fung: Interface Handler(defines an interface for handling requests)
-    c. Restaurant Management: Interface Handler
-    d. Customer2, Customer3 and so on: Concrete Handlers
+    a. Customer: Client(initiates request to Concrete Handler, the customer can be anywhere in the queue from the front to the tail)
+    b. Table Handler: Interface Handler(defines an interface for handling requests)
+    c. AllocateCurrent: Concrete Handler 1
+    d. LocateAndAssign: Concrete Handler 2
     
     
     
