@@ -8,7 +8,7 @@
 			(iii): Either check in or leave
 
 		Collaborators:
-			(i): Manager
+			(i): Manager, Din Tai Fung
 			(ii): Manager
 			(iii): Manager
 
@@ -17,10 +17,12 @@
 		Responsbilities: 
 			(i): Maintain customers' queue with details(name, phone number etc.)
 			(ii): Inform Manager 
-
+              (iii): Send confirmation messages to customers
+               
 		Collaborators:
 			(i): Customer
 			(ii): Manager
+              (iii): Customer 
 
 	c. Manager
 
@@ -28,7 +30,7 @@
 			(i): Add customers to the waiting list
 			(ii): Remove certain clients from waiting list
 			(iii): Provide size of next table available
-			(iv): Check if next available table is less than or equal to next customer's size 
+			(iv): Check if next available table size is less than or equal to next customer's size 
 		
 		Corresponding Collaborators:
 			(i): Customer, LocateAndAssign
